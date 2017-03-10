@@ -1,0 +1,1 @@
+[Intent Casting ? in fragements](http://stackoverflow.com/questions/31970896/the-intent-constructors-parameters)

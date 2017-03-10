@@ -5,9 +5,12 @@ package io.github.ynagarjuna1995.retrofitimplementation.common;
  */
 
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -27,5 +30,15 @@ public class ActivityUtils {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.add(frameId,fragment);
         transaction.commit();
+    }
+
+    public static void changeScreenintent(@NonNull Context CurrentActivity,
+                                    @NonNull Class NextActivity)
+    {
+        checkNotNull(CurrentActivity);
+        checkNotNull(NextActivity);
+        Intent intent = new Intent(CurrentActivity,
+                NextActivity);
+        CurrentActivity.startActivity(intent);
     }
 }

@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".albumLite.AlbumLite" />
+        <activity android:name=".albumViewer.AlbumViewer" />
+        <activity android:name=".firerealm.FireRealm" />
+        <activity android:name=".firetube.FireTube"></activity>
     </application>
 
 </manifest>
